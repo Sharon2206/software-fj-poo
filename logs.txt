@@ -4,3 +4,10 @@
 [2026-05-10 21:55:22] Finalizó el proceso de reserva
 [2026-05-10 21:55:22] Reserva confirmada para: sharon angarita
 [2026-05-10 21:57:09] Error: Duración inválida en reserva
+[2026-05-10 22:03:35] Error: Nombre de cliente inválido
+[2026-05-10 22:03:35] Error: Capacidad invalida en sala
+[2026-05-10 22:03:35] Error: Duración inválida en reserva
+[2026-05-10 22:03:35] Reserva realizada correctamente para: Sharon Angarita
+[2026-05-10 22:03:35] Finalizó el proceso de reserva
+[2026-05-10 22:03:35] Reserva confirmada para: Sharon Angarita
+[2026-05-10 22:03:35] Error al cancelar reserva: No se puede cancelar una reserva confirmada
