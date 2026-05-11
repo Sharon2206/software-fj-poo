@@ -17,6 +17,8 @@ class sala(servicio):
 
         self.capacidad = capacidad
 
+    # Calcula costo según las horas
+
     def calcular_costo(self, horas=1):
 
         if horas <= 0:

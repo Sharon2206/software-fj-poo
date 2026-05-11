@@ -11,3 +11,13 @@
 [2026-05-10 22:03:35] Finalizó el proceso de reserva
 [2026-05-10 22:03:35] Reserva confirmada para: Sharon Angarita
 [2026-05-10 22:03:35] Error al cancelar reserva: No se puede cancelar una reserva confirmada
+[2026-05-10 22:19:17] Error: Correo inválido
+[2026-05-10 22:19:17] Error registrando cliente: Correo invalido
+[2026-05-10 22:21:01] Cliente registrado: sharon
+[2026-05-10 22:22:18] Error: Duración inválida en reserva
+[2026-05-10 22:22:18] Error creando reserva: La duración debe ser mayor a cero
+[2026-05-10 22:22:39] Reserva creada para: sharon
+[2026-05-10 22:22:57] Reserva realizada correctamente para: sharon
+[2026-05-10 22:22:57] Finalizó el proceso de reserva
+[2026-05-10 22:22:57] Reserva confirmada para: sharon
+[2026-05-10 22:24:10] Cliente registrado: sharon2

@@ -3,6 +3,8 @@ from excepciones.personalizadas import cliente_invalido_error
 from utilidades.logger import registrar_log
 
 
+# Clase que maneja la información de los clientes
+
 class cliente(entidad):
 
     def __init__(self, id_entidad, nombre, correo, telefono):
@@ -23,6 +25,8 @@ class cliente(entidad):
     @nombre.setter
     def nombre(self, valor):
 
+        # Valida longitud mínima
+
         if not valor or len(valor.strip()) < 3:
             registrar_log("Error: Nombre de cliente inválido")
             raise cliente_invalido_error(
@@ -38,6 +42,8 @@ class cliente(entidad):
     @correo.setter
     def correo(self, valor):
 
+        # Valida formato del correo
+
         if "@" not in valor or "." not in valor:
             registrar_log("Error: Correo inválido")
             raise cliente_invalido_error(
@@ -52,6 +58,8 @@ class cliente(entidad):
 
     @telefono.setter
     def telefono(self, valor):
+
+        # Valida que el teléfono solo tenga números
 
         if not valor.isdigit():
             registrar_log("Error: Teléfono inválido")
