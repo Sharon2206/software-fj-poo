@@ -21,6 +21,8 @@ class asesoria(servicio):
 
         total = self._costo_base * horas
 
+        # Aplica descuento (si existe)
+
         if descuento > 0:
             total -= total * (descuento / 100)
 
