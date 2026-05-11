@@ -1,43 +1,64 @@
+from modelos.cliente import cliente
+from modelos.reserva import reserva
+
 from servicios.sala import sala
 from servicios.equipo import equipo
 from servicios.asesoria import asesoria
 
 
+print("sistema software fj")
+print("---------------------------")
+
+
 try:
 
-    servicio1 = sala(
+    cliente1 = cliente(
         1,
-        "Sala premium",
+        "sharon angarita",
+        "sharon@gmail.com",
+        "3201234567"
+    )
+
+    sala1 = sala(
+        1,
+        "sala premium",
         50000,
-        20
+        15
     )
 
-    servicio2 = equipo(
+    equipo1 = equipo(
         2,
-        "Portátil gamer",
+        "pc gamer",
         30000,
-        "Computador"
+        "computador"
     )
 
-    servicio3 = asesoria(
+    asesoria1 = asesoria(
         3,
-        "Asesoria python",
+        "asesoria python",
         80000,
-        "Ingeniero senior"
+        "ingeniero senior"
     )
 
-    print(servicio1.describir_servicio())
-    print("------------------")
+    reserva1 = reserva(
+        cliente1,
+        sala1,
+        -5
+    )
 
-    print(servicio2.describir_servicio())
-    print("------------------")
+    print(reserva1.mostrar_reserva())
 
-    print(servicio3.describir_servicio())
-    print("------------------")
+    costo = reserva1.procesar_reserva()
 
-    print("Costo sala:", servicio1.calcular_costo(3))
-    print("Costo equipo:", servicio2.calcular_costo(2))
-    print("Costo asesoria:", servicio3.calcular_costo(4, 10))
+    print("---------------------------")
+    print(f"costo total: {costo}")
+
+    reserva1.confirmar_reserva()
+
+    print("---------------------------")
+    print("reserva confirmada")
+    print(reserva1.mostrar_reserva())
 
 except Exception as e:
-    print(f"Error: {e}")
+
+    print(f"error del sistema: {e}")
